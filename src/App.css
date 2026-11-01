@@ -1,0 +1,134 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: system-ui, sans-serif;
+  color: #e8e4d8;
+  background: #1c1f1a;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 10px 16px;
+  background: #2a2e23;
+  border-bottom: 2px solid #4a5338;
+}
+
+.topbar h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.controls button {
+  margin-right: 4px;
+}
+
+.controls button.active {
+  background: #6b8f3a;
+  color: white;
+}
+
+.main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 240px 1fr 260px;
+  overflow: hidden;
+}
+
+.stats,
+.log {
+  padding: 12px;
+  overflow-y: auto;
+  background: #22251e;
+}
+
+.stats h2,
+.map h2,
+.log h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #9ab26b;
+  margin: 16px 0 6px;
+}
+
+.map {
+  padding: 12px;
+  overflow-y: auto;
+}
+
+.actions {
+  margin: 8px 0;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.hire-panel > div {
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+button {
+  background: #3f4a2b;
+  color: #e8e4d8;
+  border: 1px solid #5a6840;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #566a33;
+}
+
+.log ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+.log li {
+  padding: 4px 0;
+  border-bottom: 1px solid #333;
+}
+
+.calendar {
+  font-size: 13px;
+  color: #cfd6b8;
+}
+
+.village-canvas {
+  width: 100%;
+  max-width: 1100px;
+  border: 1px solid #4a5338;
+  border-radius: 6px;
+  display: block;
+  cursor: pointer;
+}
+
+.hint {
+  font-size: 11px;
+  color: #9ab26b;
+  max-width: 1000px;
+  margin: 6px 0 14px;
+}
+
+.selection-panel {
+  background: #22251e;
+  border: 1px solid #4a5338;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin: 10px 0;
+  min-height: 32px;
+}
+
+.selection-panel .actions span {
+  width: 100%;
+  font-size: 12px;
+  color: #cfd6b8;
+  margin-bottom: 4px;
+}
